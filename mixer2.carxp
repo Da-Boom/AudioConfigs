@@ -55,7 +55,7 @@
     <MappedMinimum>0</MappedMinimum>
     <MappedMaximum>5</MappedMaximum>
     <MidiCC>33</MidiCC>
-    <Value>1</Value>
+    <Value>4</Value>
    </Parameter>
 
    <Parameter>
@@ -443,7 +443,7 @@
     <Index>2</Index>
     <Name>Mute on stop</Name>
     <Symbol>muting</Symbol>
-    <Value>1</Value>
+    <Value>0</Value>
    </Parameter>
 
    <Parameter>
@@ -478,7 +478,12 @@
     <Index>7</Index>
     <Name>Output gain</Name>
     <Symbol>g_out</Symbol>
-    <Value>1</Value>
+    <MidiChannel>1</MidiChannel>
+    <MappedControlIndex>37</MappedControlIndex>
+    <MappedMinimum>0</MappedMinimum>
+    <MappedMaximum>1000</MappedMaximum>
+    <MidiCC>37</MidiCC>
+    <Value>0.256713449954987</Value>
    </Parameter>
 
    <Parameter>
@@ -499,11 +504,6 @@
     <Index>10</Index>
     <Name>Instrument mix gain 0</Name>
     <Symbol>imix_0</Symbol>
-    <MidiChannel>1</MidiChannel>
-    <MappedControlIndex>37</MappedControlIndex>
-    <MappedMinimum>0</MappedMinimum>
-    <MappedMaximum>10</MappedMaximum>
-    <MidiCC>37</MidiCC>
     <Value>1.13501083850861</Value>
    </Parameter>
 
@@ -537,7 +537,7 @@
     <MappedMinimum>0</MappedMinimum>
     <MappedMaximum>10</MappedMaximum>
     <MidiCC>41</MidiCC>
-    <Value>0.913061439990997</Value>
+    <Value>0.382540225982666</Value>
    </Parameter>
 
    <Parameter>
@@ -570,7 +570,7 @@
     <MappedMinimum>0</MappedMinimum>
     <MappedMaximum>10</MappedMaximum>
     <MidiCC>45</MidiCC>
-    <Value>0.53027355670929</Value>
+    <Value>0.307743579149246</Value>
    </Parameter>
 
    <Parameter>
@@ -603,7 +603,7 @@
     <MappedMinimum>0</MappedMinimum>
     <MappedMaximum>10</MappedMaximum>
     <MidiCC>49</MidiCC>
-    <Value>1.75388050079346</Value>
+    <Value>2.1806333065033</Value>
    </Parameter>
 
    <Parameter>
@@ -636,7 +636,7 @@
     <MappedMinimum>0</MappedMinimum>
     <MappedMaximum>10</MappedMaximum>
     <MidiCC>53</MidiCC>
-    <Value>1.26619327068329</Value>
+    <Value>0.819191873073578</Value>
    </Parameter>
 
    <Parameter>
@@ -657,14 +657,19 @@
     <Index>34</Index>
     <Name>Instrument on 5</Name>
     <Symbol>ion_5</Symbol>
-    <Value>0</Value>
+    <Value>1</Value>
    </Parameter>
 
    <Parameter>
     <Index>35</Index>
     <Name>Instrument mix gain 5</Name>
     <Symbol>imix_5</Symbol>
-    <Value>1</Value>
+    <MidiChannel>1</MidiChannel>
+    <MappedControlIndex>38</MappedControlIndex>
+    <MappedMinimum>0</MappedMinimum>
+    <MappedMaximum>10</MappedMaximum>
+    <MidiCC>38</MidiCC>
+    <Value>0.222053065896034</Value>
    </Parameter>
 
    <Parameter>
@@ -692,7 +697,12 @@
     <Index>40</Index>
     <Name>Instrument mix gain 6</Name>
     <Symbol>imix_6</Symbol>
-    <Value>1</Value>
+    <MidiChannel>1</MidiChannel>
+    <MappedControlIndex>42</MappedControlIndex>
+    <MappedMinimum>0</MappedMinimum>
+    <MappedMaximum>10</MappedMaximum>
+    <MidiCC>42</MidiCC>
+    <Value>0.475516110658646</Value>
    </Parameter>
 
    <Parameter>
@@ -3474,7 +3484,7 @@
    <CustomData>
     <Type>http://lv2plug.in/ns/ext/atom#Path</Type>
     <Key>http://lsp-plug.in/plugins/lv2/multisampler_x12/ports#sf_4_0</Key>
-    <Value>TrulyEpicLulz.wav</Value>
+    <Value>Emotional Damage.wav</Value>
    </CustomData>
 
    <CustomData>
@@ -4116,7 +4126,7 @@
    <CustomData>
     <Type>http://lv2plug.in/ns/ext/atom#Path</Type>
     <Key>http://lsp-plug.in/plugins/lv2/multisampler_x12/ports#sf_5_0</Key>
-    <Value>success.wav</Value>
+    <Value>Monke Flip.wav</Value>
    </CustomData>
 
    <CustomData>
@@ -8532,14 +8542,14 @@
    <CustomData>
     <Type>http://lv2plug.in/ns/ext/atom#Int</Type>
     <Key>http://lsp-plug.in/plugins/lv2/multisampler_x12/ports#inst</Key>
-    <Value>BQAAAA==</Value>
+    <Value>BAAAAA==</Value>
    </CustomData>
 
    <CustomData>
     <Type>http://lv2plug.in/ns/ext/atom#Object</Type>
     <Key>http://lsp-plug.in/plugins/lv2/multisampler_x12/KVT</Key>
     <Value>
-aAAAAAsAAAAAAAAAQQAAAEIAAAAAAAAAEwAAABEAAAAvaW5zdHJ1bWVudC80L25hbWUAAAAAAABDAAAAAAAAAA4AAAARAAAAVHJ1bHlFcGljTHVsegAAAEQAAAAAAAAABAAAAAcAAAAAAAAAAAAAAGgAAAALAAAAAAAAAEEAAABCAAAAAAAAABMAAAARAAAAL2luc3RydW1lbnQvMC9uYW1lAAAAAAAAQwAAAAAAAAAPAAAAEQAAAEVhcnRoQm91bmQtV2F0AABEAAAAAAAAAAQAAAAHAAAAAAAAAAAAAABoAAAACwAAAAAAAABBAAAAQgAAAAAAAAATAAAAEQAAAC9pbnN0cnVtZW50LzMvbmFtZQAAAAAAAEMAAAAAAAAADgAAABEAAABFYXJ0Ym91bmQtd2F0AAAARAAAAAAAAAAEAAAABwAAAAAAAAAAAAAAaAAAAAsAAAAAAAAAQQAAAEIAAAAAAAAAEwAAABEAAAAvaW5zdHJ1bWVudC8yL25hbWUAAAAAAABDAAAAAAAAAAsAAAARAAAAQ3liZXJQdW5rZAAAAAAAAEQAAAAAAAAABAAAAAcAAAAAAAAAAAAAAGAAAAALAAAAAAAAAEEAAABCAAAAAAAAABMAAAARAAAAL2luc3RydW1lbnQvMS9uYW1lAAAAAAAAQwAAAAAAAAAIAAAAEQAAAEFpckhvcm4ARAAAAAAAAAAEAAAABwAAAAAAAAAAAAAA
+aAAAAAsAAAAAAAAAQQAAAEIAAAAAAAAAEwAAABEAAAAvaW5zdHJ1bWVudC8zL25hbWUAAAAAAABDAAAAAAAAAA4AAAARAAAAVHJ1bHlFcGljTHVsegAAAEQAAAAAAAAABAAAAAcAAAAAAAAAAAAAAGgAAAALAAAAAAAAAEEAAABCAAAAAAAAABMAAAARAAAAL2luc3RydW1lbnQvMi9uYW1lAAAAAAAAQwAAAAAAAAAMAAAAEQAAAEN5YmVycHVuaydkAAAAAABEAAAAAAAAAAQAAAAHAAAAAAAAAAAAAABgAAAACwAAAAAAAABBAAAAQgAAAAAAAAATAAAAEQAAAC9pbnN0cnVtZW50LzEvbmFtZQAAAAAAAEMAAAAAAAAACAAAABEAAABBaXJob3JuAEQAAAAAAAAABAAAAAcAAAAAAAAAAAAAAGgAAAALAAAAAAAAAEEAAABCAAAAAAAAABMAAAARAAAAL2luc3RydW1lbnQvMC9uYW1lAAAAAAAAQwAAAAAAAAAJAAAAEQAAAEVhcnRoV2F0AAAAAAAAAABEAAAAAAAAAAQAAAAHAAAAAAAAAAAAAABoAAAACwAAAAAAAABBAAAAQgAAAAAAAAATAAAAEQAAAC9pbnN0cnVtZW50LzUvbmFtZQAAAAAAAEMAAAAAAAAACwAAABEAAABNb25rZSBGbGlwAAAAAAAARAAAAAAAAAAEAAAABwAAAAAAAAAAAAAAYAAAAAsAAAAAAAAAQQAAAEIAAAAAAAAAEwAAABEAAAAvaW5zdHJ1bWVudC80L25hbWUAAAAAAABDAAAAAAAAAAgAAAARAAAARWRhbWFnZQBEAAAAAAAAAAQAAAAHAAAAAAAAAAAAAAA=
     </Value>
    </CustomData>
 
@@ -10468,14 +10478,6 @@ aAAAAAsAAAAAAAAAQQAAAEIAAAAAAAAAEwAAABEAAAAvaW5zdHJ1bWVudC80L25hbWUAAAAAAABDAAAA
    <Target>LSP Gate Stereo:Input R</Target>
   </Connection>
   <Connection>
-   <Source>Firefox:output_FL</Source>
-   <Target>AUDIO Audio/Sink sink:playback_FL</Target>
-  </Connection>
-  <Connection>
-   <Source>Firefox:output_FR</Source>
-   <Target>AUDIO Audio/Sink sink:playback_FR</Target>
-  </Connection>
-  <Connection>
    <Source>AUDIO Audio/Sink sink Monitor:monitor_FL</Source>
    <Target>jack_mixer:Audio L</Target>
   </Connection>
@@ -10505,6 +10507,10 @@ aAAAAAsAAAAAAAAAQQAAAEIAAAAAAAAAEwAAABEAAAAvaW5zdHJ1bWVudC80L25hbWUAAAAAAABDAAAA
   </Connection>
   <Connection>
    <Source>Midi-Bridge:AKAI MIDI Mix at usb-0000:2f:00-3-2- full speed:(capture_0) MIDI Mix MIDI 1</Source>
+   <Target>LSP Multi-Sampler x12 Stereo:events-in</Target>
+  </Connection>
+  <Connection>
+   <Source>Midi-Bridge:AKAI MIDI Mix at usb-0000:2f:00-3-2- full speed:(capture_0) MIDI Mix MIDI 1</Source>
    <Target>midiCCToggle:events-in</Target>
   </Connection>
   <Connection>
@@ -10514,6 +10520,10 @@ aAAAAAsAAAAAAAAAQQAAAEIAAAAAAAAAEwAAABEAAAAvaW5zdHJ1bWVudC80L25hbWUAAAAAAABDAAAA
   <Connection>
    <Source>jack_mixer:midi out</Source>
    <Target>MuteLight3:events-in</Target>
+  </Connection>
+  <Connection>
+   <Source>jack_mixer:midi out</Source>
+   <Target>MuteLight6:events-in</Target>
   </Connection>
   <Connection>
    <Source>jack_mixer:midi out</Source>
@@ -10540,20 +10550,16 @@ aAAAAAsAAAAAAAAAQQAAAEIAAAAAAAAAEwAAABEAAAAvaW5zdHJ1bWVudC80L25hbWUAAAAAAABDAAAA
    <Target>MuteLight7:events-in</Target>
   </Connection>
   <Connection>
-   <Source>jack_mixer:midi out</Source>
-   <Target>MuteLight6:events-in</Target>
-  </Connection>
-  <Connection>
    <Source>midiCCToggle:events-out</Source>
    <Target>Calf Reverb:events-in</Target>
   </Connection>
   <Connection>
    <Source>midiCCToggle:events-out</Source>
-   <Target>Calf Ring Modulator:events-in</Target>
+   <Target>jack_mixer:midi in</Target>
   </Connection>
   <Connection>
    <Source>midiCCToggle:events-out</Source>
-   <Target>jack_mixer:midi in</Target>
+   <Target>Calf Ring Modulator:events-in</Target>
   </Connection>
   <Connection>
    <Source>midiCCToggle:events-out</Source>

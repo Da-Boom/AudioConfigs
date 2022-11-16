@@ -1,345 +1,349 @@
 <!DOCTYPE patchbay>
 <patchbay name="STREAM-PATCHBAY" version="0.3.6">
  <items>
-  <item port-type="pipewire-midi" node-type="pipewire">
-   <output node="jack_mixer" port="jack_mixer:midi out"/>
-   <input node="MIDI CC to Note (2)" port="MIDI CC to Note (2):events-in"/>
-  </item>
-  <item port-type="pipewire-midi" node-type="pipewire">
-   <output node="jack_mixer" port="jack_mixer:midi out"/>
-   <input node="MuteLight3" port="MuteLight3:events-in"/>
-  </item>
-  <item port-type="pipewire-midi" node-type="pipewire">
-   <output node="MuteLight4" port="MuteLight4:events-out"/>
-   <input node="Midi-Bridge" port="MIDI Mix:MIDI Mix MIDI 1"/>
-  </item>
-  <item port-type="pipewire-midi" node-type="pipewire">
-   <output node="jack_mixer" port="jack_mixer:midi out"/>
-   <input node="midiNotesToCC" port="midiNotesToCC:events-in"/>
-  </item>
-  <item port-type="pipewire-midi" node-type="pipewire">
-   <output node="midiChannelize" port="midiChannelize:events-out"/>
-   <input node="MidiRModLight" port="MidiRModLight:events-in"/>
-  </item>
-  <item port-type="pipewire-midi" node-type="pipewire">
-   <output node="jack_mixer" port="jack_mixer:midi out"/>
-   <input node="MuteLight6" port="MuteLight6:events-in"/>
-  </item>
-  <item port-type="pipewire-midi" node-type="pipewire">
-   <output node="midiCCToggle" port="midiCCToggle:events-out"/>
-   <input node="Calf Reverb" port="Calf Reverb:events-in"/>
-  </item>
-  <item port-type="pipewire-audio" node-type="pipewire">
-   <output node="LSP Compressor Stereo" port="LSP Compressor Stereo:Output L"/>
-   <input node="jack_mixer" port="jack_mixer:Mic L"/>
-  </item>
-  <item port-type="pipewire-midi" node-type="pipewire">
-   <output node="Midi-Bridge" port="nanoKONTROL2:nanoKONTROL2 nanoKONTROL2 _ CTR"/>
-   <input node="Calf Reverb" port="Calf Reverb:events-in"/>
-  </item>
-  <item port-type="pipewire-midi" node-type="pipewire">
-   <output node="jack_mixer" port="jack_mixer:midi out"/>
-   <input node="MuteLight2" port="MuteLight2:events-in"/>
-  </item>
-  <item port-type="pipewire-midi" node-type="pipewire">
-   <output node="Midi-Bridge" port="nanoKONTROL2:nanoKONTROL2 nanoKONTROL2 _ CTR"/>
-   <input node="MaPitchshift" port="MaPitchshift:events-in"/>
-  </item>
-  <item port-type="pipewire-audio" node-type="pipewire">
-   <output node="jack_mixer" port="jack_mixer:Speaker L"/>
-   <input node="TU106 High Definition Audio Controller Digital Stereo (HDMI)" port="Q27G2G4:playback_FL"/>
-  </item>
-  <item port-type="pipewire-midi" node-type="pipewire">
-   <output node="Midi-Bridge" port="Midi Through:Midi Through Port-0"/>
-   <input node="LSP Multi-Sampler x12 Stereo" port="LSP Multi-Sampler x12 Stereo:events-in"/>
-  </item>
-  <item port-type="pipewire-midi" node-type="pipewire">
-   <output node="jack_mixer" port="jack_mixer:midi out"/>
-   <input node="MuteLight7" port="MuteLight7:events-in"/>
-  </item>
-  <item port-type="pipewire-midi" node-type="pipewire">
-   <output node="RingModBpassLight" port="RingModBpassLight:events-out"/>
-   <input node="Midi-Bridge" port="qmidiroute:in"/>
-  </item>
-  <item port-type="pipewire-midi" node-type="pipewire">
-   <output node="MIDI Channelize" port="MIDI Channelize:events-out"/>
-   <input node="RingModBpassLight" port="RingModBpassLight:events-in"/>
-  </item>
-  <item port-type="pipewire-midi" node-type="pipewire">
-   <output node="MIDI Channelize" port="MIDI Channelize:events-out"/>
-   <input node="MIDI CC to Note" port="MIDI CC to Note:events-in"/>
-  </item>
-  <item port-type="pipewire-midi" node-type="pipewire">
-   <output node="jack_mixer" port="jack_mixer:midi out"/>
-   <input node="MIDI CC to Note (3)" port="MIDI CC to Note (3):events-in"/>
-  </item>
-  <item port-type="pipewire-midi" node-type="pipewire">
-   <output node="MIDI CC to Note (3)" port="MIDI CC to Note (3):events-out"/>
-   <input node="Midi-Bridge" port="qmidiroute:in"/>
-  </item>
-  <item port-type="pipewire-midi" node-type="pipewire">
-   <output node="MIDI Note to CC" port="MIDI Note to CC:events-out"/>
-   <input node="Midi-Bridge" port="qmidiroute:in"/>
-  </item>
-  <item port-type="pipewire-midi" node-type="pipewire">
-   <output node="Carla-Patchbay" port="Carla-Patchbay:events-out"/>
-   <input node="Midi-Bridge" port="qmidiroute:in"/>
-  </item>
-  <item port-type="pipewire-midi" node-type="pipewire">
-   <output node="Carla-Patchbay" port="Carla-Patchbay:events-out"/>
-   <input node="Midi-Bridge" port="MIDI Mix:MIDI Mix MIDI 1"/>
-  </item>
-  <item port-type="pipewire-midi" node-type="pipewire">
-   <output node="MIDI Note to CC" port="MIDI Note to CC:events-out"/>
-   <input node="Midi-Bridge" port="MIDI Mix:MIDI Mix MIDI 1"/>
-  </item>
-  <item port-type="pipewire-midi" node-type="pipewire">
-   <output node="MuteLight2" port="MuteLight2:events-out"/>
-   <input node="Midi-Bridge" port="MIDI Mix:MIDI Mix MIDI 1"/>
-  </item>
-  <item port-type="pipewire-audio" node-type="pipewire">
-   <output node="LSP Multi-Sampler x12 Stereo" port="LSP Multi-Sampler x12 Stereo:Output R"/>
-   <input node="jack_mixer" port="jack_mixer:SBoard R"/>
-  </item>
-  <item port-type="pipewire-midi" node-type="pipewire">
-   <output node="midiCCToggle" port="midiCCToggle:events-out"/>
-   <input node="midiConverter3" port="midiConverter3:events-in"/>
-  </item>
-  <item port-type="pipewire-midi" node-type="pipewire">
-   <output node="MIDI CC to Note (3)" port="MIDI CC to Note (3):events-out"/>
-   <input node="Midi-Bridge" port="MIDI Mix:MIDI Mix MIDI 1"/>
-  </item>
-  <item port-type="pipewire-midi" node-type="pipewire">
-   <output node="MuteLight7" port="MuteLight7:events-out"/>
-   <input node="Midi-Bridge" port="MIDI Mix:MIDI Mix MIDI 1"/>
-  </item>
-  <item port-type="pipewire-midi" node-type="pipewire">
-   <output node="MuteLight8" port="MuteLight8:events-out"/>
-   <input node="Midi-Bridge" port="MIDI Mix:MIDI Mix MIDI 1"/>
-  </item>
-  <item port-type="pipewire-midi" node-type="pipewire">
-   <output node="midiChannelize" port="midiChannelize:events-out"/>
-   <input node="MidiRverbLight" port="MidiRverbLight:events-in"/>
-  </item>
-  <item port-type="pipewire-audio" node-type="pipewire">
-   <output node="jack_mixer" port="jack_mixer:Speaker R"/>
-   <input node="TU106 High Definition Audio Controller Digital Stereo (HDMI)" port="Q27G2G4:playback_FR"/>
-  </item>
-  <item port-type="pipewire-midi" node-type="pipewire">
-   <output node="midiNotesToCC" port="midiNotesToCC:events-out"/>
-   <input node="Midi-Bridge" port="qmidiroute:in"/>
-  </item>
-  <item port-type="pipewire-audio" node-type="pipewire">
-   <output node="USB Audio Microphone" port="USB Audio #2:capture_FR"/>
-   <input node="MaPitchshift" port="MaPitchshift:Audio Input 1"/>
-  </item>
-  <item port-type="pipewire-audio" node-type="pipewire">
-   <output node="USB Audio Microphone" port="USB Audio #2:capture_FL"/>
-   <input node="MaPitchshift" port="MaPitchshift:Audio Input 1"/>
-  </item>
-  <item port-type="pipewire-audio" node-type="pipewire">
-   <output node="jack_mixer" port="jack_mixer:Music Out L"/>
-   <input node="OBS_MUSIC Audio/Source/Virtual sink" port="OBS_MUSIC Audio/Source/Virtual sink:input_FL"/>
-  </item>
-  <item port-type="pipewire-audio" node-type="pipewire">
-   <output node="VOIP Audio/Sink sink" port="VOIP Audio/Sink sink:monitor_FR"/>
-   <input node="jack_mixer" port="jack_mixer:VOIP R"/>
-  </item>
-  <item port-type="pipewire-midi" node-type="pipewire">
-   <output node="Midi-Bridge" port="nanoKONTROL2:nanoKONTROL2 nanoKONTROL2 _ CTR"/>
-   <input node="LSP Multi-Sampler x12 Stereo" port="LSP Multi-Sampler x12 Stereo:events-in"/>
-  </item>
-  <item port-type="pipewire-midi" node-type="pipewire">
-   <output node="jack_mixer" port="jack_mixer:midi out"/>
-   <input node="MIDI Note to CC" port="MIDI Note to CC:events-in"/>
-  </item>
-  <item port-type="pipewire-midi" node-type="pipewire">
-   <output node="Midi-Bridge" port="MIDI Mix:MIDI Mix MIDI 1"/>
-   <input node="midiCCToggle" port="midiCCToggle:events-in"/>
-  </item>
-  <item port-type="pipewire-midi" node-type="pipewire">
-   <output node="MuteLight1" port="MuteLight1:events-out"/>
-   <input node="Midi-Bridge" port="MIDI Mix:MIDI Mix MIDI 1"/>
-  </item>
-  <item port-type="pipewire-midi" node-type="pipewire">
-   <output node="MIDI CC to Note" port="MIDI CC to Note:events-out"/>
-   <input node="Midi-Bridge" port="MIDI Mix:MIDI Mix MIDI 1"/>
-  </item>
-  <item port-type="pipewire-midi" node-type="pipewire">
-   <output node="midiCCToggle" port="midiCCToggle:events-out"/>
-   <input node="jack_mixer" port="jack_mixer:midi in"/>
-  </item>
-  <item port-type="pipewire-midi" node-type="pipewire">
-   <output node="midiConverter3" port="midiConverter3:events-out"/>
-   <input node="Midi-Bridge" port="MIDI Mix:MIDI Mix MIDI 1"/>
-  </item>
-  <item port-type="pipewire-midi" node-type="pipewire">
-   <output node="Midi-Bridge" port="nanoKONTROL2:nanoKONTROL2 nanoKONTROL2 _ CTR"/>
-   <input node="jack_mixer" port="jack_mixer:midi in"/>
-  </item>
-  <item port-type="pipewire-midi" node-type="pipewire">
-   <output node="MidiRverbLight" port="MidiRverbLight:events-out"/>
-   <input node="Midi-Bridge" port="MIDI Mix:MIDI Mix MIDI 1"/>
-  </item>
-  <item port-type="alsa-midi" node-type="alsa">
-   <output node="36:MIDI Mix" port="0:MIDI Mix MIDI 1"/>
-   <input node="129:WINE midi driver" port="1:WINE ALSA Input"/>
-  </item>
-  <item port-type="pipewire-midi" node-type="pipewire">
-   <output node="MuteLight5" port="MuteLight5:events-out"/>
-   <input node="Midi-Bridge" port="MIDI Mix:MIDI Mix MIDI 1"/>
-  </item>
-  <item port-type="pipewire-audio" node-type="pipewire">
-   <output node="jack_mixer" port="jack_mixer:Music Out R"/>
-   <input node="OBS_MUSIC Audio/Source/Virtual sink" port="OBS_MUSIC Audio/Source/Virtual sink:input_FR"/>
-  </item>
-  <item port-type="pipewire-midi" node-type="pipewire">
-   <output node="midiCCToggle" port="midiCCToggle:events-out"/>
-   <input node="Calf Ring Modulator" port="Calf Ring Modulator:events-in"/>
-  </item>
-  <item port-type="pipewire-midi" node-type="pipewire">
-   <output node="midiCCToggle" port="midiCCToggle:events-out"/>
-   <input node="midiChannelize" port="midiChannelize:events-in"/>
-  </item>
-  <item port-type="pipewire-audio" node-type="pipewire">
-   <output node="jack_mixer" port="jack_mixer:Speaker L"/>
-   <input node="PCM2902 Audio Codec Pro" port="USB Audio CODEC:playback_AUX0"/>
-  </item>
-  <item port-type="pipewire-midi" node-type="pipewire">
-   <output node="Midi-Bridge" port="nanoKONTROL2:nanoKONTROL2 nanoKONTROL2 _ CTR"/>
-   <input node="Calf Ring Modulator" port="Calf Ring Modulator:events-in"/>
-  </item>
-  <item port-type="pipewire-midi" node-type="pipewire">
-   <output node="Midi-Bridge" port="MIDI Mix:MIDI Mix MIDI 1"/>
-   <input node="MaPitchshift" port="MaPitchshift:events-in"/>
-  </item>
-  <item port-type="pipewire-midi" node-type="pipewire">
-   <output node="jack_mixer" port="jack_mixer:midi out"/>
-   <input node="MuteLight1" port="MuteLight1:events-in"/>
-  </item>
-  <item port-type="pipewire-midi" node-type="pipewire">
-   <output node="jack_mixer" port="jack_mixer:midi out"/>
-   <input node="MuteLight4" port="MuteLight4:events-in"/>
-  </item>
-  <item port-type="pipewire-midi" node-type="pipewire">
-   <output node="jack_mixer" port="jack_mixer:midi out"/>
-   <input node="Carla-Patchbay" port="Carla-Patchbay:events-in"/>
-  </item>
-  <item port-type="pipewire-audio" node-type="pipewire">
-   <output node="jack_mixer" port="jack_mixer:OBS L"/>
-   <input node="OBS_AUDIO Audio/Source/Virtual sink" port="OBS_AUDIO Audio/Source/Virtual sink:input_FL"/>
-  </item>
-  <item port-type="pipewire-midi" node-type="pipewire">
-   <output node="jack_mixer" port="jack_mixer:midi out"/>
-   <input node="MuteLight5" port="MuteLight5:events-in"/>
-  </item>
-  <item port-type="pipewire-audio" node-type="pipewire">
-   <output node="jack_mixer" port="jack_mixer:PULSE R"/>
-   <input node="APP_MIC Audio/Source/Virtual sink" port="APP_MIC Audio/Source/Virtual sink:input_FR"/>
-  </item>
-  <item port-type="pipewire-audio" node-type="pipewire">
-   <output node="jack_mixer" port="jack_mixer:OBS R"/>
-   <input node="OBS_AUDIO Audio/Source/Virtual sink" port="OBS_AUDIO Audio/Source/Virtual sink:input_FR"/>
-  </item>
-  <item port-type="pipewire-audio" node-type="pipewire">
-   <output node="jack_mixer" port="jack_mixer:Speaker L"/>
-   <input node="TU106 High Definition Audio Controller Digital Stereo (HDMI)" port="HDMI 2:playback_FL"/>
-  </item>
-  <item port-type="pipewire-midi" node-type="pipewire">
-   <output node="MIDI CC to Note (2)" port="MIDI CC to Note (2):events-out"/>
-   <input node="Midi-Bridge" port="qmidiroute:in"/>
-  </item>
-  <item port-type="pipewire-audio" node-type="pipewire">
-   <output node="jack_mixer" port="jack_mixer:PULSE L"/>
-   <input node="APP_MIC Audio/Source/Virtual sink" port="APP_MIC Audio/Source/Virtual sink:input_FL"/>
-  </item>
-  <item port-type="pipewire-audio" node-type="pipewire">
-   <output node="jack_mixer" port="jack_mixer:Monitor L"/>
-   <input node="PCM2902 Audio Codec Pro" port="USB Audio CODEC:playback_AUX0"/>
-  </item>
-  <item port-type="pipewire-audio" node-type="pipewire">
-   <output node="jack_mixer" port="jack_mixer:Speaker R"/>
-   <input node="PCM2902 Audio Codec Pro" port="USB Audio CODEC:playback_AUX1"/>
-  </item>
-  <item port-type="pipewire-audio" node-type="pipewire">
-   <output node="LSP Multi-Sampler x12 Stereo" port="LSP Multi-Sampler x12 Stereo:Output L"/>
-   <input node="jack_mixer" port="jack_mixer:SBoard L"/>
-  </item>
-  <item port-type="pipewire-midi" node-type="pipewire">
-   <output node="MIDI CC to Note (2)" port="MIDI CC to Note (2):events-out"/>
-   <input node="Midi-Bridge" port="MIDI Mix:MIDI Mix MIDI 1"/>
-  </item>
-  <item port-type="pipewire-midi" node-type="pipewire">
-   <output node="jack_mixer" port="jack_mixer:midi out"/>
-   <input node="Midi-Bridge" port="nanoKONTROL2:nanoKONTROL2 nanoKONTROL2 _ CTR"/>
-  </item>
-  <item port-type="pipewire-midi" node-type="pipewire">
-   <output node="MuteLight3" port="MuteLight3:events-out"/>
-   <input node="Midi-Bridge" port="MIDI Mix:MIDI Mix MIDI 1"/>
-  </item>
-  <item port-type="pipewire-audio" node-type="pipewire">
-   <output node="AUDIO Audio/Sink sink" port="AUDIO Audio/Sink sink:monitor_FR"/>
-   <input node="jack_mixer" port="jack_mixer:Audio R"/>
-  </item>
-  <item port-type="pipewire-audio" node-type="pipewire">
-   <output node="MUSIC Audio/Sink sink" port="MUSIC Audio/Sink sink:monitor_FL"/>
-   <input node="jack_mixer" port="jack_mixer:Music L"/>
-  </item>
-  <item port-type="pipewire-audio" node-type="pipewire">
-   <output node="jack_mixer" port="jack_mixer:Speaker R"/>
-   <input node="TU106 High Definition Audio Controller Digital Stereo (HDMI)" port="HDMI 2:playback_FR"/>
-  </item>
-  <item port-type="pipewire-midi" node-type="pipewire">
-   <output node="midiChannelize" port="midiChannelize:events-out"/>
-   <input node="MIDI CC to Note" port="MIDI CC to Note:events-in"/>
-  </item>
-  <item port-type="pipewire-audio" node-type="pipewire">
-   <output node="MUSIC Audio/Sink sink" port="MUSIC Audio/Sink sink:monitor_FR"/>
-   <input node="jack_mixer" port="jack_mixer:Music R"/>
-  </item>
-  <item port-type="pipewire-midi" node-type="pipewire">
-   <output node="Midi-Bridge" port="nanoKONTROL2:nanoKONTROL2 nanoKONTROL2 _ CTR"/>
-   <input node="Midi-Bridge" port="qmidiroute:in"/>
-  </item>
-  <item port-type="pipewire-midi" node-type="pipewire">
-   <output node="MuteLight6" port="MuteLight6:events-out"/>
-   <input node="Midi-Bridge" port="MIDI Mix:MIDI Mix MIDI 1"/>
-  </item>
-  <item port-type="pipewire-midi" node-type="pipewire">
-   <output node="jack_mixer" port="jack_mixer:midi out"/>
-   <input node="MuteLight8" port="MuteLight8:events-in"/>
-  </item>
-  <item port-type="pipewire-audio" node-type="pipewire">
-   <output node="VOIP Audio/Sink sink" port="VOIP Audio/Sink sink:monitor_FL"/>
-   <input node="jack_mixer" port="jack_mixer:VOIP L"/>
-  </item>
-  <item port-type="pipewire-audio" node-type="pipewire">
-   <output node="LSP Compressor Stereo" port="LSP Compressor Stereo:Output R"/>
-   <input node="jack_mixer" port="jack_mixer:Mic R"/>
-  </item>
-  <item port-type="pipewire-midi" node-type="pipewire">
-   <output node="midiCCToggle" port="midiCCToggle:events-out"/>
-   <input node="MIDI Channelize" port="MIDI Channelize:events-in"/>
-  </item>
-  <item port-type="pipewire-midi" node-type="pipewire">
-   <output node="midiConverter3" port="midiConverter3:events-out"/>
-   <input node="Midi-Bridge" port="qmidiroute:in"/>
-  </item>
-  <item port-type="pipewire-audio" node-type="pipewire">
-   <output node="AUDIO Audio/Sink sink" port="AUDIO Audio/Sink sink:monitor_FL"/>
-   <input node="jack_mixer" port="jack_mixer:Audio L"/>
-  </item>
-  <item port-type="pipewire-midi" node-type="pipewire">
-   <output node="MIDI CC to Note" port="MIDI CC to Note:events-out"/>
-   <input node="Midi-Bridge" port="qmidiroute:in"/>
-  </item>
-  <item port-type="pipewire-midi" node-type="pipewire">
-   <output node="MidiRModLight" port="MidiRModLight:events-out"/>
-   <input node="Midi-Bridge" port="MIDI Mix:MIDI Mix MIDI 1"/>
-  </item>
-  <item port-type="pipewire-audio" node-type="pipewire">
-   <output node="jack_mixer" port="jack_mixer:Monitor R"/>
-   <input node="PCM2902 Audio Codec Pro" port="USB Audio CODEC:playback_AUX1"/>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output port="MUSIC Audio/Sink sink:monitor_FR" node="MUSIC Audio/Sink sink"/>
+   <input port="jack_mixer:Music R" node="jack_mixer"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-midi">
+   <output port="midiChannelize:events-out" node="midiChannelize"/>
+   <input port="MIDI CC to Note:events-in" node="MIDI CC to Note"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output port="jack_mixer:Speaker R" node="jack_mixer"/>
+   <input port="HDMI 2:playback_FR" node="TU106 High Definition Audio Controller Digital Stereo (HDMI)"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output port="AUDIO Audio/Sink sink:monitor_FR" node="AUDIO Audio/Sink sink"/>
+   <input port="jack_mixer:Audio R" node="jack_mixer"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output port="MUSIC Audio/Sink sink:monitor_FL" node="MUSIC Audio/Sink sink"/>
+   <input port="jack_mixer:Music L" node="jack_mixer"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-midi">
+   <output port="MIDI Mix:MIDI Mix MIDI 1" node="Midi-Bridge"/>
+   <input port="LSP Multi-Sampler x12 Stereo:events-in" node="LSP Multi-Sampler x12 Stereo"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-midi">
+   <output port="jack_mixer:midi out" node="jack_mixer"/>
+   <input port="nanoKONTROL2:nanoKONTROL2 nanoKONTROL2 _ CTR" node="Midi-Bridge"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-midi">
+   <output port="MuteLight3:events-out" node="MuteLight3"/>
+   <input port="MIDI Mix:MIDI Mix MIDI 1" node="Midi-Bridge"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output port="LSP Multi-Sampler x12 Stereo:Output L" node="LSP Multi-Sampler x12 Stereo"/>
+   <input port="jack_mixer:SBoard L" node="jack_mixer"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-midi">
+   <output port="MIDI CC to Note (2):events-out" node="MIDI CC to Note (2)"/>
+   <input port="MIDI Mix:MIDI Mix MIDI 1" node="Midi-Bridge"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output port="jack_mixer:Speaker R" node="jack_mixer"/>
+   <input port="USB Audio CODEC:playback_AUX1" node="PCM2902 Audio Codec Pro"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output port="jack_mixer:Monitor L" node="jack_mixer"/>
+   <input port="USB Audio CODEC:playback_AUX0" node="PCM2902 Audio Codec Pro"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output port="jack_mixer:Monitor R" node="jack_mixer"/>
+   <input port="USB Audio CODEC:playback_AUX1" node="PCM2902 Audio Codec Pro"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-midi">
+   <output port="MidiRModLight:events-out" node="MidiRModLight"/>
+   <input port="MIDI Mix:MIDI Mix MIDI 1" node="Midi-Bridge"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output port="AUDIO Audio/Sink sink:monitor_FL" node="AUDIO Audio/Sink sink"/>
+   <input port="jack_mixer:Audio L" node="jack_mixer"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-midi">
+   <output port="MIDI CC to Note:events-out" node="MIDI CC to Note"/>
+   <input port="qmidiroute:in" node="Midi-Bridge"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-midi">
+   <output port="midiConverter3:events-out" node="midiConverter3"/>
+   <input port="qmidiroute:in" node="Midi-Bridge"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-midi">
+   <output port="midiCCToggle:events-out" node="midiCCToggle"/>
+   <input port="MIDI Channelize:events-in" node="MIDI Channelize"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output port="LSP Compressor Stereo:Output R" node="LSP Compressor Stereo"/>
+   <input port="jack_mixer:Mic R" node="jack_mixer"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-midi">
+   <output port="jack_mixer:midi out" node="jack_mixer"/>
+   <input port="MuteLight8:events-in" node="MuteLight8"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output port="VOIP Audio/Sink sink:monitor_FL" node="VOIP Audio/Sink sink"/>
+   <input port="jack_mixer:VOIP L" node="jack_mixer"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-midi">
+   <output port="nanoKONTROL2:nanoKONTROL2 nanoKONTROL2 _ CTR" node="Midi-Bridge"/>
+   <input port="qmidiroute:in" node="Midi-Bridge"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-midi">
+   <output port="MuteLight6:events-out" node="MuteLight6"/>
+   <input port="MIDI Mix:MIDI Mix MIDI 1" node="Midi-Bridge"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-midi">
+   <output port="MIDI Mix:MIDI Mix MIDI 1" node="Midi-Bridge"/>
+   <input port="MaPitchshift:events-in" node="MaPitchshift"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-midi">
+   <output port="jack_mixer:midi out" node="jack_mixer"/>
+   <input port="MuteLight1:events-in" node="MuteLight1"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-midi">
+   <output port="nanoKONTROL2:nanoKONTROL2 nanoKONTROL2 _ CTR" node="Midi-Bridge"/>
+   <input port="Calf Ring Modulator:events-in" node="Calf Ring Modulator"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output port="jack_mixer:Music Out R" node="jack_mixer"/>
+   <input port="OBS_MUSIC Audio/Source/Virtual sink:input_FR" node="OBS_MUSIC Audio/Source/Virtual sink"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-midi">
+   <output port="midiCCToggle:events-out" node="midiCCToggle"/>
+   <input port="Calf Ring Modulator:events-in" node="Calf Ring Modulator"/>
+  </item>
+  <item node-type="alsa" port-type="alsa-midi">
+   <output port="0:MIDI Mix MIDI 1" node="36:MIDI Mix"/>
+   <input port="1:WINE ALSA Input" node="129:WINE midi driver"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-midi">
+   <output port="MuteLight5:events-out" node="MuteLight5"/>
+   <input port="MIDI Mix:MIDI Mix MIDI 1" node="Midi-Bridge"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-midi">
+   <output port="midiCCToggle:events-out" node="midiCCToggle"/>
+   <input port="midiChannelize:events-in" node="midiChannelize"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-midi">
+   <output port="MidiRverbLight:events-out" node="MidiRverbLight"/>
+   <input port="MIDI Mix:MIDI Mix MIDI 1" node="Midi-Bridge"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output port="jack_mixer:Speaker L" node="jack_mixer"/>
+   <input port="USB Audio CODEC:playback_AUX0" node="PCM2902 Audio Codec Pro"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-midi">
+   <output port="nanoKONTROL2:nanoKONTROL2 nanoKONTROL2 _ CTR" node="Midi-Bridge"/>
+   <input port="jack_mixer:midi in" node="jack_mixer"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-midi">
+   <output port="midiConverter3:events-out" node="midiConverter3"/>
+   <input port="MIDI Mix:MIDI Mix MIDI 1" node="Midi-Bridge"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-midi">
+   <output port="MIDI CC to Note:events-out" node="MIDI CC to Note"/>
+   <input port="MIDI Mix:MIDI Mix MIDI 1" node="Midi-Bridge"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-midi">
+   <output port="midiCCToggle:events-out" node="midiCCToggle"/>
+   <input port="jack_mixer:midi in" node="jack_mixer"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-midi">
+   <output port="MuteLight1:events-out" node="MuteLight1"/>
+   <input port="MIDI Mix:MIDI Mix MIDI 1" node="Midi-Bridge"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output port="jack_mixer:PULSE L" node="jack_mixer"/>
+   <input port="APP_MIC Audio/Source/Virtual sink:input_FL" node="APP_MIC Audio/Source/Virtual sink"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-midi">
+   <output port="MIDI CC to Note (2):events-out" node="MIDI CC to Note (2)"/>
+   <input port="qmidiroute:in" node="Midi-Bridge"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output port="jack_mixer:Speaker L" node="jack_mixer"/>
+   <input port="HDMI 2:playback_FL" node="TU106 High Definition Audio Controller Digital Stereo (HDMI)"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output port="jack_mixer:OBS R" node="jack_mixer"/>
+   <input port="OBS_AUDIO Audio/Source/Virtual sink:input_FR" node="OBS_AUDIO Audio/Source/Virtual sink"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output port="jack_mixer:PULSE R" node="jack_mixer"/>
+   <input port="APP_MIC Audio/Source/Virtual sink:input_FR" node="APP_MIC Audio/Source/Virtual sink"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-midi">
+   <output port="jack_mixer:midi out" node="jack_mixer"/>
+   <input port="MuteLight5:events-in" node="MuteLight5"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output port="jack_mixer:OBS L" node="jack_mixer"/>
+   <input port="OBS_AUDIO Audio/Source/Virtual sink:input_FL" node="OBS_AUDIO Audio/Source/Virtual sink"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-midi">
+   <output port="jack_mixer:midi out" node="jack_mixer"/>
+   <input port="Carla-Patchbay:events-in" node="Carla-Patchbay"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-midi">
+   <output port="jack_mixer:midi out" node="jack_mixer"/>
+   <input port="MuteLight4:events-in" node="MuteLight4"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-midi">
+   <output port="midiNotesToCC:events-out" node="midiNotesToCC"/>
+   <input port="qmidiroute:in" node="Midi-Bridge"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output port="USB Audio #2:capture_FR" node="USB Audio Microphone"/>
+   <input port="MaPitchshift:Audio Input 1" node="MaPitchshift"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output port="jack_mixer:Speaker R" node="jack_mixer"/>
+   <input port="Q27G2G4:playback_FR" node="TU106 High Definition Audio Controller Digital Stereo (HDMI)"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-midi">
+   <output port="midiChannelize:events-out" node="midiChannelize"/>
+   <input port="MidiRverbLight:events-in" node="MidiRverbLight"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-midi">
+   <output port="MuteLight8:events-out" node="MuteLight8"/>
+   <input port="MIDI Mix:MIDI Mix MIDI 1" node="Midi-Bridge"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-midi">
+   <output port="MuteLight7:events-out" node="MuteLight7"/>
+   <input port="MIDI Mix:MIDI Mix MIDI 1" node="Midi-Bridge"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output port="LSP Multi-Sampler x12 Stereo:Output R" node="LSP Multi-Sampler x12 Stereo"/>
+   <input port="jack_mixer:SBoard R" node="jack_mixer"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-midi">
+   <output port="midiCCToggle:events-out" node="midiCCToggle"/>
+   <input port="midiConverter3:events-in" node="midiConverter3"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-midi">
+   <output port="MIDI CC to Note (3):events-out" node="MIDI CC to Note (3)"/>
+   <input port="MIDI Mix:MIDI Mix MIDI 1" node="Midi-Bridge"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-midi">
+   <output port="MIDI Note to CC:events-out" node="MIDI Note to CC"/>
+   <input port="MIDI Mix:MIDI Mix MIDI 1" node="Midi-Bridge"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-midi">
+   <output port="MuteLight2:events-out" node="MuteLight2"/>
+   <input port="MIDI Mix:MIDI Mix MIDI 1" node="Midi-Bridge"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-midi">
+   <output port="Carla-Patchbay:events-out" node="Carla-Patchbay"/>
+   <input port="MIDI Mix:MIDI Mix MIDI 1" node="Midi-Bridge"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-midi">
+   <output port="MIDI Mix:MIDI Mix MIDI 1" node="Midi-Bridge"/>
+   <input port="midiCCToggle:events-in" node="midiCCToggle"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-midi">
+   <output port="nanoKONTROL2:nanoKONTROL2 nanoKONTROL2 _ CTR" node="Midi-Bridge"/>
+   <input port="LSP Multi-Sampler x12 Stereo:events-in" node="LSP Multi-Sampler x12 Stereo"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-midi">
+   <output port="jack_mixer:midi out" node="jack_mixer"/>
+   <input port="MIDI Note to CC:events-in" node="MIDI Note to CC"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output port="VOIP Audio/Sink sink:monitor_FR" node="VOIP Audio/Sink sink"/>
+   <input port="jack_mixer:VOIP R" node="jack_mixer"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output port="USB Audio #2:capture_FL" node="USB Audio Microphone"/>
+   <input port="MaPitchshift:Audio Input 1" node="MaPitchshift"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output port="jack_mixer:Music Out L" node="jack_mixer"/>
+   <input port="OBS_MUSIC Audio/Source/Virtual sink:input_FL" node="OBS_MUSIC Audio/Source/Virtual sink"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-midi">
+   <output port="nanoKONTROL2:nanoKONTROL2 nanoKONTROL2 _ CTR" node="Midi-Bridge"/>
+   <input port="Calf Reverb:events-in" node="Calf Reverb"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output port="LSP Compressor Stereo:Output L" node="LSP Compressor Stereo"/>
+   <input port="jack_mixer:Mic L" node="jack_mixer"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-midi">
+   <output port="midiChannelize:events-out" node="midiChannelize"/>
+   <input port="MidiRModLight:events-in" node="MidiRModLight"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-midi">
+   <output port="jack_mixer:midi out" node="jack_mixer"/>
+   <input port="MuteLight6:events-in" node="MuteLight6"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-midi">
+   <output port="MuteLight4:events-out" node="MuteLight4"/>
+   <input port="MIDI Mix:MIDI Mix MIDI 1" node="Midi-Bridge"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-midi">
+   <output port="jack_mixer:midi out" node="jack_mixer"/>
+   <input port="midiNotesToCC:events-in" node="midiNotesToCC"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-midi">
+   <output port="midiCCToggle:events-out" node="midiCCToggle"/>
+   <input port="Calf Reverb:events-in" node="Calf Reverb"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-midi">
+   <output port="jack_mixer:midi out" node="jack_mixer"/>
+   <input port="MuteLight3:events-in" node="MuteLight3"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-midi">
+   <output port="jack_mixer:midi out" node="jack_mixer"/>
+   <input port="MIDI CC to Note (2):events-in" node="MIDI CC to Note (2)"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-midi">
+   <output port="Carla-Patchbay:events-out" node="Carla-Patchbay"/>
+   <input port="qmidiroute:in" node="Midi-Bridge"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-midi">
+   <output port="MIDI Note to CC:events-out" node="MIDI Note to CC"/>
+   <input port="qmidiroute:in" node="Midi-Bridge"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-midi">
+   <output port="MIDI CC to Note (3):events-out" node="MIDI CC to Note (3)"/>
+   <input port="qmidiroute:in" node="Midi-Bridge"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-midi">
+   <output port="MIDI Channelize:events-out" node="MIDI Channelize"/>
+   <input port="MIDI CC to Note:events-in" node="MIDI CC to Note"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-midi">
+   <output port="jack_mixer:midi out" node="jack_mixer"/>
+   <input port="MIDI CC to Note (3):events-in" node="MIDI CC to Note (3)"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-midi">
+   <output port="MIDI Channelize:events-out" node="MIDI Channelize"/>
+   <input port="RingModBpassLight:events-in" node="RingModBpassLight"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-midi">
+   <output port="RingModBpassLight:events-out" node="RingModBpassLight"/>
+   <input port="qmidiroute:in" node="Midi-Bridge"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-midi">
+   <output port="jack_mixer:midi out" node="jack_mixer"/>
+   <input port="MuteLight7:events-in" node="MuteLight7"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-midi">
+   <output port="Midi Through:Midi Through Port-0" node="Midi-Bridge"/>
+   <input port="LSP Multi-Sampler x12 Stereo:events-in" node="LSP Multi-Sampler x12 Stereo"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-midi">
+   <output port="nanoKONTROL2:nanoKONTROL2 nanoKONTROL2 _ CTR" node="Midi-Bridge"/>
+   <input port="MaPitchshift:events-in" node="MaPitchshift"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output port="jack_mixer:Speaker L" node="jack_mixer"/>
+   <input port="Q27G2G4:playback_FL" node="TU106 High Definition Audio Controller Digital Stereo (HDMI)"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-midi">
+   <output port="jack_mixer:midi out" node="jack_mixer"/>
+   <input port="MuteLight2:events-in" node="MuteLight2"/>
   </item>
  </items>
 </patchbay>
