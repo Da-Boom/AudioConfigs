@@ -6,6 +6,7 @@ wait 1
 pactl load-module module-null-sink object.linger=1 media.class=Audio/Sink sink_name=AUDIO
 pactl load-module module-null-sink object.linger=1 media.class=Audio/Sink sink_name=MUSIC
 pactl load-module module-null-sink object.linger=1 media.class=Audio/Sink sink_name=VOIP
+pactl load-module module-null-sink object.linger=1 media.class=Audio/Sink sink_name=MONITOR
 pactl set-default-sink AUDIO
 #Load Source Devices
 pactl load-module module-null-sink object.linger=1 media.class=Audio/Source/Virtual sink_name=APP_MIC
